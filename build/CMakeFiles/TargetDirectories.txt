@@ -1,0 +1,4 @@
+C:/projects/CProjects/welkin/build/CMakeFiles/ALL_BUILD.dir
+C:/projects/CProjects/welkin/build/CMakeFiles/ZERO_CHECK.dir
+C:/projects/CProjects/welkin/build/src/CMakeFiles/welkin.dir
+C:/projects/CProjects/welkin/build/tests/CMakeFiles/test.dir

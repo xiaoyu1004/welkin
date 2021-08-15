@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/projects/CProjects/welkin/cmake/welkin_add_layer.cmake
+C:/projects/CProjects/welkin/src/CMakeLists.txt
+C:/projects/CProjects/welkin/src/platform.h.in
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckCCompilerFlag.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckCSourceCompiles.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckCXXCompilerFlag.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckCXXSourceCompiles.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckIncludeFile.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/CheckLibraryExists.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/FindPackageMessage.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/FindThreads.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/GenerateExportHeader.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/Internal/CheckCompilerFlag.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/Internal/CheckSourceCompiles.cmake
+C:/softwares/VisualStudio/VS2019/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.19/Modules/exportheader.cmake.in
