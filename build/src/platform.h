@@ -1,6 +1,11 @@
 #ifndef WELKIN_PLATFORM_H
 #define WELKIN_PLATFORM_H
 
+// declare macro
+#define WELKIN_BUILD_TESTS 1
+#define WELKIN_SHARED_LIB 1
+#define WELKIN_STDIO 1
+
 #include "welkin_export.h"
 
 #ifdef __cplusplus
