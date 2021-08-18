@@ -7,18 +7,15 @@
 
 namespace welkin
 {
-#define WELKIN_CHECK(condition, fmt, ...) welkin_check(condition, fmt, ##__VA_ARGS__)
+#define WELKIN_INFO(format, ...) printf(format, ##__VA_ARGS__)
 
-    static void welkin_check(const bool condition, const char *fmt, ...)
-    {
-        if (!condition)
-        {
-            va_list ap;
-            va_start(ap, fmt);
-            fprintf(stderr, fmt, ap);
-            printf("\n");
-            va_end(ap);
-        }
+#define WELKIN_ASSERT(condition, fmt, ...)   \
+    {                                        \
+        int res = (condition);               \
+        if (!res)                            \
+        {                                    \
+            WELKIN_INFO(fmt, ##__VA_ARGS__); \
+        }                                    \
     }
 } // namespace welkin
 
