@@ -55,9 +55,9 @@ namespace welkin
     class WELKIN_EXPORT Allocator
     {
     public:
-        virtual ~Allocator();
-        virtual void *fastMalloc(size_t size);
-        virtual void fastFree(void *ptr);
+        virtual ~Allocator() {};
+        virtual void *fastMalloc(size_t size) = 0;
+        virtual void fastFree(void *ptr) = 0;
     };
 
     class PoolAllocatorPrivate

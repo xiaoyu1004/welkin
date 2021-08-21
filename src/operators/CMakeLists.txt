@@ -1,7 +1,4 @@
-# --- aim to adapt difference platform
-configure_file(platform.h.in ${CMAKE_CURRENT_BINARY_DIR}/platform.h)
-
-# --- CPU files
+# --- CPU files.
 file(GLOB tmp *.cpp)
 set(WELKIN_CPU_SRCS ${tmp})
 

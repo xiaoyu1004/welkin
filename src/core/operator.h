@@ -13,7 +13,7 @@ namespace welkin
         virtual ~Operator() {}
 
     public:
-        bool Run(int stream_id = 0) final
+        virtual bool Run(int stream_id = 0) final
         {
             m_context->SwitchToDevice(stream_id);
 
@@ -32,7 +32,7 @@ namespace welkin
         }
 
     private:
-        Context m_context;
+        Context* m_context;
     };
 } // namespace welkin
 

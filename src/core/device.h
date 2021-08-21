@@ -3,9 +3,10 @@
 
 #include <stdint.h>
 #include <string>
+#include <string_view>
 #include <ostream>
 
-#include "common.h"
+#include "exception.h"
 
 namespace welkin
 {
@@ -99,8 +100,8 @@ namespace welkin
 
         void validate()
         {
-            WELKIN_ASSERT(m_index == -1 || m_index >= 0, "Device index must be -1 or non-negative, got %d", (int)m_index);
-            WELKIN_ASSERT(!is_cpu() || m_index <= 0, "CPU device index must be -1 or zero, got %d", (int)m_index);
+            WELKIN_CHECK(m_index == -1 || m_index >= 0, "Device index must be -1 or non-negative, got %d", (int)m_index);
+            WELKIN_CHECK(!is_cpu() || m_index <= 0, "CPU device index must be -1 or zero, got %d", (int)m_index);
         }
     };
 

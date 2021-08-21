@@ -2,15 +2,19 @@
 #define CONTEXT_H
 
 #include "platform.h"
+#include "device.h"
 
-class WELKIN_EXPORT Context
+namespace welkin
 {
-public:
-    Context();
-    virtual ~Context() noexcept {}
+    class WELKIN_EXPORT Context
+    {
+    public:
+        Context();
+        virtual ~Context() noexcept {}
 
-public:
-    
-};
+    public:
+        void SwitchToDevice(int d);
+    };
+}
 
 #endif

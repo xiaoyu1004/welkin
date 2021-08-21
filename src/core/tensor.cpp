@@ -177,7 +177,7 @@ namespace welkin
         return t;
     }
 
-    Tensor Tensor::reshape(int w, int h, int c, Allocator *allocator = 0) const
+    Tensor Tensor::reshape(int w, int h, int c, Allocator *allocator) const
     {
         Tensor t;
         if (m_w * m_h * m_c != w * h * c)
@@ -261,7 +261,7 @@ namespace welkin
         m_c = 1;
         m_cstep = (size_t)(w * h);
 
-        size_t totalsize = alignSize(totalsize * elemsize, 4);
+        size_t totalsize = alignSize(total() * elemsize, 4);
         if (allocator)
         {
             m_data = allocator->fastMalloc(totalsize);
@@ -401,7 +401,7 @@ namespace welkin
     void Tensor::fill(float v)
     {
         float *ptr = (float *)m_data;
-        for (int i = 0, size = total(); i < size; ++i)
+        for (size_t i = 0, size = total(); i < size; ++i)
         {
             ptr[i] = v;
         }

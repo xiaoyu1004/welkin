@@ -20,7 +20,7 @@ namespace welkin
             for (; it != d->payouts.end(); ++it)
             {
                 void *ptr = it->second;
-                WELKIN_LOGE("%p still in use");
+                WELKIN_LOGE("%p still in use", ptr);
             }
 #endif
             delete d;
@@ -80,7 +80,7 @@ namespace welkin
         d->budgets_lock.unlock();
 
         // new
-        void *ptr = new fastMalloc(size);
+        void *ptr = fastMalloc(size);
         d->payouts_lock.lock();
         d->payouts.push_back(std::make_pair(size, ptr));
         d->payouts_lock.unlock();

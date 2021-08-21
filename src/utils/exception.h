@@ -1,15 +1,15 @@
-#ifndef _TOOLS_H_
-#define _TOOLS_H_
-
-#include <cstdarg>
-#include <cstdio>
-#include "platform.h"
+#ifndef EXCEPTION_H
+#define EXCEPTION_H
 
 namespace welkin
 {
-#define WELKIN_INFO(format, ...) printf(format, ##__VA_ARGS__)
+#define WELKIN_INFO(format, ...)       \
+    {                                  \
+        printf(format, ##__VA_ARGS__); \
+        printf("\n");                  \
+    }
 
-#define WELKIN_ASSERT(condition, fmt, ...)   \
+#define WELKIN_CHECK(condition, fmt, ...)    \
     {                                        \
         int res = (condition);               \
         if (!res)                            \
